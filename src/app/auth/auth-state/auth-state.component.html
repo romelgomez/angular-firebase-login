@@ -1,0 +1,4 @@
+<div *ngIf="user | async; let user; else loading">
+  <pre> {{user | json}} </pre>
+</div> 
+<ng-template #loading>Waiting for User Data...</ng-template>

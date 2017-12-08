@@ -1,0 +1,11 @@
+<div *ngIf="user | async; else noUser" ></div>
+<ng-template #noUser>
+    <div fxHide fxShow.xs="true"> 
+        <button mat-raised-button (click)="signInWithRedirect()"> <mat-icon svgIcon="google"></mat-icon> Inicia sesión con Google </button>    
+     </div>
+             
+     <div fxHide fxShow.gt-xs="true">
+         <button mat-raised-button (click)="signInWithPopup()"> <mat-icon svgIcon="google"></mat-icon> Inicia sesión con Google </button>
+     </div>
+</ng-template>
+

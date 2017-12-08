@@ -1,0 +1,38 @@
+<div>
+    <app-auth-state [user]="user" ></app-auth-state>
+</div>
+
+
+<mat-card>
+    <mat-card-title>Inicio de sesión</mat-card-title>
+    <mat-card-content>
+        <mat-tab-group>
+            <mat-tab label="Tengo una cuenta">
+                
+                <br>
+                <app-password-auth></app-password-auth>                 
+
+
+            </mat-tab>
+            <mat-tab label="Resgistro">Sign in</mat-tab>
+            <mat-tab label="Recuperar cuenta">Recovery</mat-tab>            
+        </mat-tab-group>
+             
+        <hr>
+
+        <mat-list>
+            <mat-list-item> <app-twitter-auth [user]="user"></app-twitter-auth> </mat-list-item>
+            <mat-list-item> <app-google-auth [user]="user" ></app-google-auth> </mat-list-item>
+            <mat-list-item> <app-facebook-auth [user]="user" ></app-facebook-auth> </mat-list-item>
+        </mat-list>
+
+
+    </mat-card-content>
+</mat-card> 
+
+
+
+
+<app-logout [user]="user"></app-logout>
+
+
