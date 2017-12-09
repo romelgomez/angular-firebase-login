@@ -18,6 +18,7 @@ import { GoogleAuthComponent } from './google-auth/google-auth.component';
 import { FacebookAuthComponent } from './facebook-auth/facebook-auth.component';
 import { TwitterAuthComponent } from './twitter-auth/twitter-auth.component';
 import { PasswordAuthComponent } from './password-auth/password-auth.component';
+import { PasswordAuthSignInComponent } from './password-auth-sign-in/password-auth-sign-in.component';
 
 
 
@@ -124,7 +125,8 @@ export class MatAllModules {}
     AuthStateComponent,
     FacebookAuthComponent,
     TwitterAuthComponent,
-    PasswordAuthComponent
+    PasswordAuthComponent,
+    PasswordAuthSignInComponent
   ]
 })
 export class AuthModule {}

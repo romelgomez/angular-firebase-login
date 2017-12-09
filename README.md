@@ -4,7 +4,7 @@
 
 ### rename 
 
-- **environment.prod.example.ts** to ** environment.prod.ts **
+- **environment.prod.example.ts** to **environment.prod.ts**
 - **environment.example.ts** to **environment.ts** 
 
 ```
